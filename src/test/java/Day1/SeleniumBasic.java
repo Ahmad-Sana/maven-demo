@@ -16,24 +16,24 @@ public class SeleniumBasic {
         String currentURLOpended = driver.getCurrentUrl();
         System.out.println(currentURLOpended);
 
-       String currentTitle =  driver.getTitle();
+        String currentTitle =  driver.getTitle();
         System.out.println(currentTitle);
 
 //        System.out.println(driver.getPageSource());
 
-       if ( driver.getPageSource().contains("Selenium automates browsers. That's it!") ){
-           System.out.println("Test passed.");
-       } else {
-           System.out.println("Test failed.");
-       }
+        if ( driver.getPageSource().contains("Selenium automates browsers. That's it!") ){
+            System.out.println("Test passed.");
+        } else {
+            System.out.println("Test failed.");
+        }
 
-       driver.navigate().to("https://www.duotech.io/");
-       Thread.sleep(1000);
-       driver.navigate().back();
+        driver.navigate().to("https://www.duotech.io/");
         Thread.sleep(1000);
-       driver.navigate().forward();
+        driver.navigate().back();
         Thread.sleep(1000);
-       driver.navigate().refresh();
+        driver.navigate().forward();
+        Thread.sleep(1000);
+        driver.navigate().refresh();
 
 
 
