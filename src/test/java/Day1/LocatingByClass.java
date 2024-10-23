@@ -30,6 +30,9 @@ public class LocatingByClass {
 
             driver.findElement( By.name("q") ).sendKeys("dragon", Keys.ENTER);
 
+
+            driver.findElement( By.linkText("Used Car Values"));
+
 //            System.out.println( driver.findElement( By.className("yuRUbf")).getText() );
 
             //Get all divs that have ClassName as yuRUbf
